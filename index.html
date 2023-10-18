@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubrica telefonica</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- title -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="text-center">RUBRICA</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- show contacts -->
+    <section class="container-fluid">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-12 col-md-4">
+                    <h2 class="mt-4">Mostra contatti</h2>
+                    <button id="showContactsBtn" class="">Mostra contatti</button>
+                </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Aggiungi un nuovo contatto</h2>
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <input id="nomeInput" type="text" class="form-control" placeholder="nome" aria-label="name" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group mb-3">
+                                        <input id="numberInput" type="number" class="form-control" placeholder="Numero di telefono" aria-label="number" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="addContactBtn" class="btn btn-add">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                    <h2 class="text-center">Cerca contatto</h2>
+                        <div class="input-group input-group-sm mt-4 d-flex justify-content-center">
+                            <input id="searchInput" type="text" class="form-control-sm" placeholder="Cerca contatto..." aria-label="name" aria-describedby="basic-addon1">
+                            <button id="searchBtn" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+            </div>
+    </section>
+
+    <!-- wrapper -->
+    <section class="container">
+        <div class="row justify-content-center">
+            <div id="contactWrapper" class="co-12 col-md-5"></div>
+        </div>
+    </section>
+
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/75c6350e1a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- JS personal -->
+    <script src="script.js"></script>
+  </body>
+</html>
